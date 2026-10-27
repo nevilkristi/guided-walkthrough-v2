@@ -1,0 +1,587 @@
+{
+  "id": "FIB-001",
+  "name": "Philips Albuquerque RF-Chip Fire (2000) — Nokia vs. Ericsson",
+  "industry": "Electronics",
+  "brand_group": "Supplier: Royal Philips Electronics (Fab 22). Customers: Nokia & Ericsson.",
+  "comic": "/comics/FIB-001",
+  "nature": "Disruption",
+  "scale": "Plant served ~30 customers; Nokia & Ericsson together ~40% of output. In 2000 Nokia was #1 handset maker (~30.6% share), Ericsson #3 (~9.7%).",
+  "normal_flow_nodes": [
+    {
+      "label": "Node 1 – Supplier (Philips)",
+      "description": "Royal Philips RF/ASIC chip fab (Fab 22), Albuquerque, New Mexico; single/critical source for handset RF chips."
+    },
+    {
+      "label": "Node 2 – Manufacturer (Nokia & Ericsson)",
+      "description": "Nordic handset OEMs integrating Philips RF chips into mobile phones; lean/JIT inbound, low buffers."
+    },
+    {
+      "label": "Node 3 – Logistics & Export",
+      "description": "Chips shipped from New Mexico to European/Asian assembly; near-JIT, minimal safety stock."
+    },
+    {
+      "label": "Node 4 – Customers",
+      "description": "Mobile operators, retailers and consumers in the booming 2000 GSM market; short product cycles."
+    }
+  ],
+  "normal_flow_steps": [
+    {
+      "step": 1,
+      "process": "Philips fabricates RF/ASIC chips in clean-room lines",
+      "node": "Supplier"
+    },
+    {
+      "step": 2,
+      "process": "Chips shipped to Nokia & Ericsson (lean/JIT inbound)",
+      "node": "Logistics"
+    },
+    {
+      "step": 3,
+      "process": "Handset assembly integrates chips into phones",
+      "node": "Manufacturer"
+    },
+    {
+      "step": 4,
+      "process": "Phones distributed via operators/retailers to consumers",
+      "node": "Customer"
+    }
+  ],
+  "kpis": [
+    {
+      "label": "Cost",
+      "value": "High-value, high-margin custom RF/ASIC chips; Philips' own loss from the fire ~$40M."
+    },
+    {
+      "label": "Lead Time",
+      "value": "Weeks (semiconductor cycle); lean/JIT inbound, no buffer; Ericsson single-sourced."
+    },
+    {
+      "label": "CO₂ Impact",
+      "value": "High (semiconductor fabrication energy/water intensive) – industry norm, not case data."
+    },
+    {
+      "label": "Waste",
+      "value": "Clean-room dependency: any contamination = total stock loss (as the fire showed)."
+    },
+    {
+      "label": "Customer Satisfaction",
+      "value": "High pre-fire (reliable, trusted primary source)."
+    },
+    {
+      "label": "Risk",
+      "value": "HIGH but unrecognised: single-plant concentration, single-sourcing, no contingency, slow escalation."
+    },
+    {
+      "label": "Quality",
+      "value": "Very high (clean-room ~1 particle/m3; custom ASIC, no drop-in substitute)."
+    },
+    {
+      "label": "Sustainability",
+      "value": "Not tracked for a 2000 semiconductor fab."
+    },
+    {
+      "label": "Circular Economy",
+      "value": "Low (minimal chip reuse/recycling in 2000)."
+    }
+  ],
+  "disruption": [
+    {
+      "label": "Trigger event",
+      "value": "17 Mar 2000: lightning strike/power surge ignited a fire in a Philips Albuquerque clean room; extinguished in ~10 min."
+    },
+    {
+      "label": "Root cause details",
+      "value": "Smoke/soot/water contaminated the clean room, destroying almost the entire RF-chip stock. Customer-side: Ericsson single-sourcing, lean/JIT, single-plant concentration, slow escalation. Philips first estimated ~1 week recovery; actual recovery took months."
+    },
+    {
+      "label": "Affected nodes",
+      "value": "Supplier (Philips: production halted, stock lost); Manufacturer (Nokia & Ericsson chip supply cut; Ericsson ~7M-phone shortfall); Logistics (inbound severed); Customer (delayed shipments, T36 launch delay)."
+    },
+    {
+      "label": "Effect on Supply chain",
+      "value": "Nokia: minor delays (early detection + re-sourcing). Ericsson: ~$400M direct loss, ~7M-phone shortfall, lost market share, exit from standalone handsets (Sony Ericsson JV, Oct 2001). Philips: ~$40M loss; plant closed 2003."
+    }
+  ],
+  "improvement": [],
+  "decision_blocks": [
+    {
+      "source": "Decision Analysis by the Company",
+      "decisions": [
+        {
+          "decision_no": 1,
+          "Description": "Escalate + priority (Nokia)",
+          "Action": "Watch supplier, daily updates, CEO-level",
+          "Cost": "Low",
+          "Lead Time": "Improved",
+          "CO2 Impact": "Low",
+          "Risk": "Reduced",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Buyer leverage + early detection"
+        },
+        {
+          "decision_no": 2,
+          "Description": "Engineers on-site (Nokia)",
+          "Action": "Deploy staff to speed supplier restart",
+          "Cost": "Low- Medium",
+          "Lead Time": "Improved",
+          "CO2 Impact": "Low",
+          "Risk": "Reduced",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Bottelneck is supplier recovery"
+        },
+        {
+          "decision_no": 3,
+          "Description": "Alternate Plants",
+          "Action": "Reschedule Philips' other fabs",
+          "Cost": "Medium",
+          "Lead Time": "Medium",
+          "CO2 Impact": "Medium",
+          "Risk": "Medium",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Supplier multi-site & prioritises you"
+        },
+        {
+          "decision_no": 4,
+          "Description": "Re-engineer / multi-source",
+          "Action": "Redesign to accept US/Japanese chips",
+          "Cost": "Medium-High",
+          "Lead Time": "Medium",
+          "CO2 Impact": "Medium",
+          "Risk": "Low",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Design modularity + qualified alts"
+        },
+        {
+          "decision_no": 5,
+          "Description": "Lock up global capacity (Nokia)",
+          "Action": "Contract spare market capacity first",
+          "Cost": "High",
+          "Lead Time": "Medium",
+          "CO2 Impact": "Medium",
+          "Risk": "Low",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Move first + capital"
+        },
+        {
+          "decision_no": 6,
+          "Description": "Wait-and-see",
+          "Action": "Accept Philips' 1-wk estimate; no mitigation",
+          "Cost": "Low",
+          "Lead Time": "Very Poor",
+          "CO2 Impact": "Low",
+          "Risk": "Very High",
+          "Quality": "Maintained",
+          "Customer satisfaction": "Very Low",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Only if outage short + buffers exist"
+        },
+        {
+          "decision_no": 7,
+          "Description": "Scale own mfg",
+          "Action": "Ramp Sweden production",
+          "Cost": "High",
+          "Lead Time": "Slow",
+          "CO2 Impact": "Medium-High",
+          "Risk": "High",
+          "Quality": "Uncertain/Low",
+          "Customer satisfaction": "Low",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Latent capacity + time"
+        },
+        {
+          "decision_no": 8,
+          "Description": "Insurance / BI claim",
+          "Action": "Recover losses via insurance",
+          "Cost": "Low",
+          "Lead Time": "n/a",
+          "CO2 Impact": "n/a",
+          "Risk": "Financial Only",
+          "Quality": "n/a",
+          "Customer satisfaction": "Not Helped",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Pair with operational fix"
+        },
+        {
+          "decision_no": 9,
+          "Description": "Institutionalise SCRM",
+          "Action": "Supplier BCP, sub-tier mapping, monitoring",
+          "Cost": "Medium",
+          "Lead Time": "Long",
+          "CO2 Impact": "Neutral",
+          "Risk": "Structirally Redcued",
+          "Quality": "Improved",
+          "Customer satisfaction": "Long-term",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "After shock exposes fragility"
+        },
+        {
+          "decision_no": 10,
+          "Description": "Restructure / JV",
+          "Action": "Outsource (Flextronics), Sony Ericsson JV",
+          "Cost": "Very High",
+          "Lead Time": "Long-term",
+          "CO2 Impact": "Neutral",
+          "Risk": "Low",
+          "Quality": "Improved",
+          "Customer satisfaction": "Recover",
+          "Sustainability": "n/a",
+          "Circular Economy": "n/a",
+          "Best when": "Structural fragility needs structural fix"
+        }
+      ]
+    },
+    {
+      "source": "Recommended Decisions",
+      "decisions": [
+        {
+          "decision_no": 11,
+          "Description": "Real-time supplier health dashboard",
+          "Action": "Build an IoT + API dashboard monitoring Philips fab uptime, yield rates and output daily",
+          "Cost": "Medium",
+          "Lead Time": "Fast",
+          "CO2 Impact": "Low",
+          "Risk": "Structurally Reduced",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "Neutral",
+          "Circular Economy": "Low",
+          "Best when": "When critical components come from a single plant with no buffer"
+        },
+        {
+          "decision_no": 12,
+          "Description": "Mandatory dual-sourcing policy",
+          "Action": "Require two qualified suppliers for every chip used in >5% of any product line",
+          "Cost": "Medium",
+          "Lead Time": "Long",
+          "CO2 Impact": "Neutral",
+          "Risk": "Structurally Reduced",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "Neutral",
+          "Circular Economy": "Neutral",
+          "Best when": "After sole-source risk is identified; standard in aerospace/defence"
+        },
+        {
+          "decision_no": 13,
+          "Description": "Pre-qualified alternate supplier contracts",
+          "Action": "Sign standby supply agreements with US + Japanese chip fabs before any crisis",
+          "Cost": "Low-Med",
+          "Lead Time": "Fast",
+          "CO2 Impact": "Low",
+          "Risk": "Low",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "Neutral",
+          "Circular Economy": "Neutral",
+          "Best when": "When lead time to qualify a new supplier exceeds crisis response window"
+        },
+        {
+          "decision_no": 14,
+          "Description": "Modular product design standard",
+          "Action": "Mandate circuit-board designs that accept multiple chip variants from different vendors",
+          "Cost": "Medium",
+          "Lead Time": "Long",
+          "CO2 Impact": "Neutral",
+          "Risk": "Low",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "Neutral",
+          "Circular Economy": "Low",
+          "Best when": "During new product development; retrofit is expensive but critical for resilience"
+        },
+        {
+          "decision_no": 15,
+          "Description": "Supplier BCP audit + fire suppression standard",
+          "Action": "Require critical suppliers to demonstrate clean-room fire suppression and BCP compliance annually",
+          "Cost": "Low",
+          "Lead Time": "Medium",
+          "CO2 Impact": "Neutral",
+          "Risk": "Reduced",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "Neutral",
+          "Circular Economy": "Neutral",
+          "Best when": "As part of annual supplier qualification review"
+        },
+        {
+          "decision_no": 16,
+          "Description": "Business interruption insurance with operational triggers",
+          "Action": "Purchase BI insurance that pays out when a named supplier loses >20% output — not just when Ericsson has proven losses",
+          "Cost": "Low",
+          "Lead Time": "Fast",
+          "CO2 Impact": "Neutral",
+          "Risk": "Financial hedge",
+          "Quality": "High",
+          "Customer satisfaction": "Protected",
+          "Sustainability": "Neutral",
+          "Circular Economy": "Neutral",
+          "Best when": "As a financial buffer alongside (not instead of) operational resilience measures"
+        }
+      ]
+    }
+  ],
+  "decisions_impact_summary": [
+    {
+      "decision_no": 1,
+      "Cost": "Low",
+      "Lead Time": "Improved",
+      "CO₂ Impact": "Low",
+      "Risk": "Low",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "n/a",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 2,
+      "Cost": "Medium",
+      "Lead Time": "Medium",
+      "CO₂ Impact": "Medium",
+      "Risk": "Medium",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "n/a",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 3,
+      "Cost": "Medium",
+      "Lead Time": "Medium",
+      "CO₂ Impact": "Med",
+      "Risk": "Medium",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Slt.Neg",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 4,
+      "Cost": "Med-High",
+      "Lead Time": "Medium",
+      "CO₂ Impact": "Med",
+      "Risk": "Low",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "n/a",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 5,
+      "Cost": "High",
+      "Lead Time": "Best",
+      "CO₂ Impact": "Med",
+      "Risk": "Low",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Slt.Neg",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 6,
+      "Cost": "Very High (real)",
+      "Lead Time": "Very Poor",
+      "CO₂ Impact": "Low",
+      "Risk": "Very High",
+      "Quality": "Maintained",
+      "Customer Satisfaction": "Very Low",
+      "Sustainability": "n/a",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 7,
+      "Cost": "High",
+      "Lead Time": "Slow",
+      "CO₂ Impact": "Med-High",
+      "Risk": "High",
+      "Quality": "Uncertain",
+      "Customer Satisfaction": "Low",
+      "Sustainability": "n/a",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 8,
+      "Cost": "Low",
+      "Lead Time": "n/a",
+      "CO₂ Impact": "n/a",
+      "Risk": "Financial Only",
+      "Quality": "n/a",
+      "Customer Satisfaction": "Not Helped",
+      "Sustainability": "n/a",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 9,
+      "Cost": "Medium",
+      "Lead Time": "Long-term",
+      "CO₂ Impact": "Neutral",
+      "Risk": "Struct.Reduced",
+      "Quality": "Improved",
+      "Customer Satisfaction": "Long-term",
+      "Sustainability": "Neutral",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 10,
+      "Cost": "Very High",
+      "Lead Time": "Long-term",
+      "CO₂ Impact": "Neutral",
+      "Risk": "Low",
+      "Quality": "Maintained",
+      "Customer Satisfaction": "Recovers",
+      "Sustainability": "n/a",
+      "Circular Economy": "n/a"
+    },
+    {
+      "decision_no": 11,
+      "Cost": "Medium",
+      "Lead Time": "Fast",
+      "CO₂ Impact": "Low",
+      "Risk": "Structurally Reduced",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Neutral",
+      "Circular Economy": "Low"
+    },
+    {
+      "decision_no": 12,
+      "Cost": "Medium",
+      "Lead Time": "Long",
+      "CO₂ Impact": "Neutral",
+      "Risk": "Structurally Reduced",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Neutral",
+      "Circular Economy": "Neutral"
+    },
+    {
+      "decision_no": 13,
+      "Cost": "Low-Med",
+      "Lead Time": "Fast",
+      "CO₂ Impact": "Low",
+      "Risk": "Low",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Neutral",
+      "Circular Economy": "Neutral"
+    },
+    {
+      "decision_no": 14,
+      "Cost": "Medium",
+      "Lead Time": "Long",
+      "CO₂ Impact": "Neutral",
+      "Risk": "Low",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Neutral",
+      "Circular Economy": "Low"
+    },
+    {
+      "decision_no": 15,
+      "Cost": "Low",
+      "Lead Time": "Medium",
+      "CO₂ Impact": "Neutral",
+      "Risk": "Reduced",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Neutral",
+      "Circular Economy": "Neutral"
+    },
+    {
+      "decision_no": 16,
+      "Cost": "Low",
+      "Lead Time": "Fast",
+      "CO₂ Impact": "Neutral",
+      "Risk": "Financial hedge",
+      "Quality": "High",
+      "Customer Satisfaction": "Protected",
+      "Sustainability": "Neutral",
+      "Circular Economy": "Neutral"
+    }
+  ],
+  "decision_scores": [
+    {
+      "decision_no": 1,
+      "Cost": 4,
+      "Resilience Gain": 4,
+      "Feasibility": 5,
+      "Speed": 4,
+      "Sustainability": 3,
+      "Overall": 4
+    },
+    {
+      "decision_no": 2,
+      "Cost": 3,
+      "Resilience Gain": 5,
+      "Feasibility": 3,
+      "Speed": 4,
+      "Sustainability": 3,
+      "Overall": 3.6
+    },
+    {
+      "decision_no": 3,
+      "Cost": 3,
+      "Resilience Gain": 5,
+      "Feasibility": 3,
+      "Speed": 4,
+      "Sustainability": 3,
+      "Overall": 3.6
+    },
+    {
+      "decision_no": 4,
+      "Cost": 3,
+      "Resilience Gain": 5,
+      "Feasibility": 4,
+      "Speed": 2,
+      "Sustainability": 3,
+      "Overall": 3.4
+    },
+    {
+      "decision_no": 5,
+      "Cost": 2,
+      "Resilience Gain": 5,
+      "Feasibility": 2,
+      "Speed": 3,
+      "Sustainability": 3,
+      "Overall": 3
+    },
+    {
+      "decision_no": 6,
+      "Cost": 3,
+      "Resilience Gain": 3,
+      "Feasibility": 4,
+      "Speed": 4,
+      "Sustainability": 3,
+      "Overall": 3.4
+    },
+    {
+      "decision_no": 7,
+      "Cost": 2,
+      "Resilience Gain": 1,
+      "Feasibility": 5,
+      "Speed": 5,
+      "Sustainability": 3,
+      "Overall": 3.2
+    }
+  ],
+  "sources": [],
+  "_sheet_name": "FIB-001"
+}
