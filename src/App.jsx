@@ -27,16 +27,30 @@ export default function App() {
   );
   const results = { you, ...baseline };
 
-  // The step crossing the middle of the viewport drives the sticky stage.
+  // The last step whose top has passed 45% of the viewport drives the sticky stage.
+  // Measured on scroll (rAF-throttled) so tall steps and fast jumps never skip a scene.
   useEffect(() => {
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) if (e.isIntersecting) setActive(Number(e.target.dataset.index));
-      },
-      { rootMargin: '-45% 0px -50% 0px' },
-    );
-    stepRefs.current.forEach((el) => el && io.observe(el));
-    return () => io.disconnect();
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const line = window.innerHeight * 0.45;
+      let current = 0;
+      stepRefs.current.forEach((el, i) => {
+        if (el && el.getBoundingClientRect().top <= line) current = i;
+      });
+      setActive(current);
+    };
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
   const goTo = (id) => {
